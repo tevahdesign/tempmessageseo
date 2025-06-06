@@ -4,3 +4,12 @@
     { "source": "/(.*)", "destination": "/" }
   ]
 }
+{
+  "redirects": [
+    {
+      "source": "/(.*)",            // Match any path
+      "destination": "https://www.tempmessage.com",  // Redirect to this URL
+      "permanent": true             // Use 301 Permanent Redirect
+    }
+  ]
+}
