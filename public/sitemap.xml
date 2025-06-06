@@ -1,0 +1,115 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Main English pages -->
+  <url>
+    <loc>https://tempmessage.com/</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempmessage.com/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tempmessage.com/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tempmessage.com/de" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tempmessage.com/zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempmessage.com/" />
+  </url>
+  
+  <!-- Spanish pages -->
+  <url>
+    <loc>https://tempmessage.com/es</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempmessage.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempmessage.com/es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tempmessage.com/fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tempmessage.com/de" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tempmessage.com/zh" />
+  </url>
+  
+  <!-- Features pages -->
+  <url>
+    <loc>https://tempmessage.com/features</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tempmessage.com/how-it-works</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tempmessage.com/alternatives</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- About pages -->
+  <url>
+    <loc>https://tempmessage.com/about</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempmessage.com/es/about" />
+  </url>
+  
+  <url>
+    <loc>https://tempmessage.com/es/about</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempmessage.com/about" />
+  </url>
+  
+  <!-- FAQ pages -->
+  <url>
+    <loc>https://tempmessage.com/faq</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempmessage.com/es/faq" />
+  </url>
+  
+  <url>
+    <loc>https://tempmessage.com/es/faq</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempmessage.com/faq" />
+  </url>
+  
+  <!-- Blog -->
+  <url>
+    <loc>https://tempmessage.com/blog</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Legal pages -->
+  <url>
+    <loc>https://tempmessage.com/privacy</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tempmessage.com/terms</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tempmessage.com/contact</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
