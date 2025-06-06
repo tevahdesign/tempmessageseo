@@ -1,6 +1,5 @@
-{
-  "rewrites": [
-    {
+ {
       "source": "/(.*)",
-      "destination": "/"  
+      "destination": "/"  // This will internally route all requests to the root path
     }
+  ],
