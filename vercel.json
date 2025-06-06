@@ -7,9 +7,9 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",            // Match any path
-      "destination": "https://www.tempmessage.com",  // Redirect to this URL
-      "permanent": true             // Use 301 Permanent Redirect
+      "source": "/(.*)",           
+      "destination": "https://www.tempmessage.com", 
+      "permanent": true            
     }
   ]
 }
