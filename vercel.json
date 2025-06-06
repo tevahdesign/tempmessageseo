@@ -1,4 +1,10 @@
 {
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"  // This will internally route all requests to the root path
+    }
+  ],
   "redirects": [
     {
       "source": "/sitemap.xml", 
