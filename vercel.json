@@ -4,8 +4,4 @@
       "source": "/(.*)",
       "destination": "/" 
     }
-  ], {
-      "source": "/(.*)",
-      "destination": "/"  
-    }
-  ]
+  ],
