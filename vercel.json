@@ -1,11 +1,10 @@
-
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
-}
 {
   "redirects": [
+    {
+      "source": "/sitemap.xml", 
+      "destination": "https://www.tempmessage.com/sitemap.xml", 
+      "permanent": true
+    },
     {
       "source": "/(.*)",           
       "destination": "https://www.tempmessage.com", 
