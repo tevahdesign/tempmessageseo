@@ -8,7 +8,7 @@ export const KeywordOptimizedContent = () => {
       <section className="mb-16">
         <div className="bg-app-darker rounded-lg p-8 border border-app-border">
           <h2 className="text-3xl font-bold text-white mb-6 text-center">
-            Best Free Temporary Email Service 2025
+            Temp Mail  Temporary Email
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="text-center p-4">
