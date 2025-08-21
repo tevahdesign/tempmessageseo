@@ -25,7 +25,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        
+        */}
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="bg-app-dark rounded-lg p-6 border border-app-border">
             <div className="flex items-center">
@@ -54,7 +54,7 @@ export const Hero = () => {
             </div>
             <p className="mt-4 text-gray-400">
               No registration needed. Get a new email address instantly and start receiving emails right away.
-            </p>*/}
+            </p>
           </div>
         </div>
       </div>
