@@ -20,36 +20,7 @@ export const Hero = () => {
           </div>
         </div>
       
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="bg-app-dark rounded-lg p-6 border border-app-border">
-            <div className="flex items-center">
-              <Shield className="h-8 w-8 text-app-blue" />
-              <h3 className="ml-3 text-xl font-medium text-white">Secure & Anonymous</h3>
-            </div>
-            <p className="mt-4 text-gray-400">
-              No personal information required. Keep your identity private while using online services.
-            </p>
-          </div>
-          
-          <div className="bg-app-dark rounded-lg p-6 border border-app-border">
-            <div className="flex items-center">
-              <Clock className="h-8 w-8 text-app-blue" />
-              <h3 className="ml-3 text-xl font-medium text-white">Temporary Access</h3>
-            </div>
-            <p className="mt-4 text-gray-400">
-              Emails are temporary and will be automatically deleted after a set period. No long-term commitment.
-            </p>
-          </div>
-          
-          <div className="bg-app-dark rounded-lg p-6 border border-app-border">
-            <div className="flex items-center">
-              <Mail className="h-8 w-8 text-app-blue" />
-              <h3 className="ml-3 text-xl font-medium text-white">Instant Setup</h3>
-            </div>
-            <p className="mt-4 text-gray-400">
-              No registration needed. Get a new email address instantly and start receiving emails right away.
-            </p>
-          </div>
+        
         </div>
       </div>
     </div>
