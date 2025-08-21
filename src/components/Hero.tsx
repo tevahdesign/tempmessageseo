@@ -10,9 +10,7 @@ export const Hero = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Temp Mail - Disposable Temporary Email
           </h1> 
-          <p className="mt-3 max-w-md mx-auto text-base sm:text-lg text-gray-300">
-            Protect your privacy. Use our disposable email addresses to avoid spam and keep your real inbox clean.
-          </p>
+          
           <div className="mt-8 flex justify-center">
             <div className="inline-flex rounded-md shadow">
               
