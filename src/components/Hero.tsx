@@ -6,10 +6,16 @@ export const Hero = () => {
   return (
     <div className="bg-app-darker py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-            Temp Mail - Disposable Temporary Email
-          </h1> 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2885050972904135"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2885050972904135"
+     data-ad-slot="9124471463"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
           
           <div className="mt-8 flex justify-center">
             <div className="inline-flex rounded-md shadow">
@@ -20,7 +26,7 @@ export const Hero = () => {
       
         
         </div>
-      </div>
+      
     
     
   );
