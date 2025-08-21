@@ -1,4 +1,4 @@
-/*
+
 import { ArrowRight, Shield, Clock, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ export const Hero = () => {
         <div className="text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Temp Mail - Disposable Temporary Email
-          </h1>
+          </h1> {/*
           <p className="mt-3 max-w-md mx-auto text-base sm:text-lg text-gray-300">
             Protect your privacy. Use our disposable email addresses to avoid spam and keep your real inbox clean.
           </p>
@@ -54,11 +54,12 @@ export const Hero = () => {
             </div>
             <p className="mt-4 text-gray-400">
               No registration needed. Get a new email address instantly and start receiving emails right away.
-            </p>
+            </p>*/}
           </div>
         </div>
       </div>
     </div>
+    
   );
 };
-*/
+
