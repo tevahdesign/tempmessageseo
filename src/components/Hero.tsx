@@ -9,23 +9,17 @@ export const Hero = () => {
         <div className="text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Temp Mail - Disposable Temporary Email
-          </h1> {/*
+          </h1> 
           <p className="mt-3 max-w-md mx-auto text-base sm:text-lg text-gray-300">
             Protect your privacy. Use our disposable email addresses to avoid spam and keep your real inbox clean.
           </p>
           <div className="mt-8 flex justify-center">
             <div className="inline-flex rounded-md shadow">
-              <Link
-                to="/#email-generator"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-app-blue hover:bg-blue-600 transition-colors"
-              >
-                Get Started
-                <ArrowRight className="ml-2 -mr-1 h-5 w-5" />
-              </Link>
+              
             </div>
           </div>
         </div>
-        */}
+      
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="bg-app-dark rounded-lg p-6 border border-app-border">
             <div className="flex items-center">
