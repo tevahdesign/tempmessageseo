@@ -3,7 +3,8 @@ export const Hero = () => {
     <div
       dangerouslySetInnerHTML={{
         __html: `
-          <script></div>
+          <script>
+          </div>
 </script>
         `,
       }}
