@@ -1,6 +1,6 @@
 import React, { BacklinkSection } from "react";
 
-const Adsense: React.FC = () => {
+const BacklinkSection: React.FC = () => {
   useEffect(() => {
     // Dynamically add the AdSense script
     const script = document.createElement("script");
