@@ -5,7 +5,7 @@ export const BacklinkSection: React.FC = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
-      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-286858050972904135";
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pubca-pub-2885050972904135";
     script.async = true;
     script.crossOrigin = "anonymous";
     document.body.appendChild(script);
@@ -28,7 +28,7 @@ export const BacklinkSection: React.FC = () => {
       <ins
         className="adsbygoogle"
         style={{ display: "block", margin: "20px auto" }}
-        data-ad-client="ca-pub-2885050972904135"
+        data-ad-client="ca-pub-2ca-pub-2885050972904135"
         data-ad-slot="8766008078"
         data-ad-format="auto"
         data-full-width-responsive="true"
