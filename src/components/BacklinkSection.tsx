@@ -1,8 +1,8 @@
-import React, {BacklinkSection} from "react";
+import React, { useEffect } from "react";
 
-const BacklinkSection: React.FC = () => {
+export const BacklinkSection: React.FC = () => {
+  // Load AdSense script dynamically
   useEffect(() => {
-    // Dynamically add the AdSense script
     const script = document.createElement("script");
     script.src =
       "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-286858050972904135";
@@ -12,7 +12,6 @@ const BacklinkSection: React.FC = () => {
 
     script.onload = () => {
       try {
-        // Render the ad in the container
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (e) {
         console.error(e);
@@ -21,17 +20,19 @@ const BacklinkSection: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <section className="backlink-section text-center py-6">
+      <h2>Check out our backlinks</h2>
+      <p>Some content about backlinks goes here.</p>
+
+      {/* AdSense ad */}
       <ins
-        className="adsbygoogle" // must use className
-        style={{ display: "block" }} // style must be a JS object
+        className="adsbygoogle"
+        style={{ display: "block", margin: "20px auto" }}
         data-ad-client="ca-pub-2885050972904135"
         data-ad-slot="8766008078"
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>
-    </div>
+    </section>
   );
 };
-
-export default BacklinkSection;
