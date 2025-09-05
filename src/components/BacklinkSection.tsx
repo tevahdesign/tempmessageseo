@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { BacklinkSection } from "react";
 
 const Adsense: React.FC = () => {
   useEffect(() => {
