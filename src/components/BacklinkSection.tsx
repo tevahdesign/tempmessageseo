@@ -34,4 +34,4 @@ const Adsense: React.FC = () => {
   );
 };
 
-export default Adsense;
+export default BacklinkSection;
