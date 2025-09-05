@@ -1,4 +1,4 @@
-import React, { BacklinkSection } from "react";
+import React, {BacklinkSection} from "react";
 
 const BacklinkSection: React.FC = () => {
   useEffect(() => {
