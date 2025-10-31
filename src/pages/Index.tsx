@@ -10,7 +10,6 @@ import { Hero } from "@/components/Hero";
 import { SEOHead } from "@/components/SEOHead";
 import { KeywordOptimizedContent } from "@/components/KeywordOptimizedContent";
 import { EmailProvider } from "@/contexts/EmailContext";
-
 const Index = () => {
   const structuredData = {
     "@context": "https://schema.org",
