@@ -115,6 +115,208 @@ export const SEOHead = ({
       <style>
 [data-keyword-cloud]{display:none;}
 </style>
+      <!-- SEO Pro Kit — tailored for https://www.tempmessage.com/ -->
+<style>
+  /* Minimal: keep crawlable blocks unobtrusive. Remove display:none to surface to users. */
+  [data-seo-faq],[data-seo-keycloud],[data-seo-links]{display:none;}
+  .sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+</style>
+
+<script>
+(function(){
+  // ========== CONFIG — customize if needed ==========
+  const CONFIG = {
+    siteName: "TempMessage",
+    siteUrl: "https://www.tempmessage.com",
+    shortDesc: "TempMessage — get temporary message addresses to receive messages and OTPs without using your real inbox. Fast, anonymous, and free.",
+    contactEmail: "webmaster@tempmessage.com",
+    logo: "https://www.tempmessage.com/assets/logo-512.png", // replace if different
+    topKeywords: [
+      "temporary message",
+      "temporary email",
+      "disposable inbox",
+      "receive otp online",
+      "anonymous messages",
+      "temp message for verification",
+      "burner message address",
+      "temp inbox",
+      "receive emails without signup",
+      "disposable email address",
+      "tempmessage"
+    ],
+    internalPages: {
+      "Temporary Message":"https://www.tempmessage.com/temporary-message",
+      "Receive OTP":"https://www.tempmessage.com/receive-otp",
+      "How it Works":"https://www.tempmessage.com/how-it-works",
+      "Privacy":"https://www.tempmessage.com/privacy",
+      "FAQ":"https://www.tempmessage.com/faq"
+    },
+    faq: [
+      {q:"What is TempMessage?", a:"TempMessage provides temporary message/inbox addresses that let you receive messages and verification codes without exposing your real email."},
+      {q:"Can I get OTPs with TempMessage?", a:"Yes — most verification emails and OTPs will be received by a TempMessage address instantly."},
+      {q:"Do messages expire?", a:"Yes — temporary addresses are short-lived. Check the specific page for expiry timeframes."}
+    ],
+    pingSitemap: false,
+    sitemapUrl: "https://www.tempmessage.com/sitemap.xml",
+    targetIndiaBoost: true
+  };
+
+  // ========== Helpers ==========
+  const head = document.head || document.getElementsByTagName('head')[0];
+  const body = document.body || document.getElementsByTagName('body')[0];
+
+  function insertMeta(name, content, prop=false){
+    if(!content) return;
+    const selector = prop ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+    const existing = document.querySelector(selector);
+    if(existing){ existing.setAttribute('content', content); return; }
+    const m = document.createElement('meta');
+    if(prop) m.setAttribute('property', name); else m.setAttribute('name', name);
+    m.setAttribute('content', content);
+    head.appendChild(m);
+  }
+
+  // 1) Title & Description fallback
+  (function setTitleAndDesc(){
+    const defaultTitle = CONFIG.siteName + " — Temporary message addresses & disposable inboxes";
+    if(!document.title) document.title = defaultTitle;
+    const existingDesc = document.querySelector('meta[name="description"]')?.content || "";
+    if(!existingDesc || existingDesc.length < 50){
+      insertMeta("description", CONFIG.shortDesc);
+    }
+    // OpenGraph & Twitter
+    insertMeta("og:title", document.title, true);
+    insertMeta("og:description", CONFIG.shortDesc, true);
+    insertMeta("og:type", "website", true);
+    insertMeta("og:url", location.href, true);
+    insertMeta("og:site_name", CONFIG.siteName, true);
+    insertMeta("og:image", CONFIG.logo, true);
+    insertMeta("twitter:card", "summary_large_image");
+    insertMeta("twitter:title", document.title);
+    insertMeta("twitter:description", CONFIG.shortDesc);
+  })();
+
+  // 2) Performance hints (preconnect + preload logo)
+  (function addPerfHints(){
+    const resources = [
+      {rel:"preconnect", href:"https://fonts.googleapis.com"},
+      {rel:"preconnect", href:"https://fonts.gstatic.com", cross:true},
+      {rel:"preload", href:CONFIG.logo, as:"image"}
+    ];
+    resources.forEach(r=>{
+      if(!r.href) return;
+      const tag = document.createElement('link');
+      tag.rel = r.rel;
+      tag.href = r.href;
+      if(r.as) tag.as = r.as;
+      if(r.cross) tag.crossOrigin = "anonymous";
+      head.appendChild(tag);
+    });
+  })();
+
+  // 3) JSON-LD: WebApplication + Organization + FAQPage
+  (function addJsonLd(){
+    const webapp = {
+      "@context":"https://schema.org",
+      "@type":"WebApplication",
+      "name": CONFIG.siteName,
+      "url": CONFIG.siteUrl,
+      "logo": CONFIG.logo,
+      "description": CONFIG.shortDesc,
+      "applicationCategory":"Utility",
+      "operatingSystem":"All",
+      "author": {"@type":"Organization","name":CONFIG.siteName,"url":CONFIG.siteUrl}
+    };
+
+    const org = {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name": CONFIG.siteName,
+      "url": CONFIG.siteUrl,
+      "logo": CONFIG.logo,
+      "contactPoint":[{"@type":"ContactPoint","email":CONFIG.contactEmail,"contactType":"customer support"}]
+    };
+
+    const faqSchema = {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity": CONFIG.faq.map(f=>({
+        "@type":"Question",
+        "name": f.q,
+        "acceptedAnswer":{"@type":"Answer","text": f.a}
+      }))
+    };
+
+    const put = (obj) => {
+      const s = document.createElement('script');
+      s.type = "application/ld+json";
+      s.text = JSON.stringify(obj);
+      head.appendChild(s);
+    };
+    put(webapp); put(org); put(faqSchema);
+  })();
+
+  // 4) Crawlable blocks: FAQ, keyword cloud, internal links (crawlable & accessible)
+  (function addCrawlableBlocks(){
+    const faqHtml = `<section aria-label="FAQ" data-seo-faq>
+      <h2 class="sr-only">Frequently Asked Questions</h2>
+      ${CONFIG.faq.map(f=>`<div><h3>${f.q}</h3><div>${f.a}</div></div>`).join("")}
+    </section>`;
+    body.insertAdjacentHTML('beforeend', faqHtml);
+
+    const keyHtml = `<nav aria-label="Related searches" data-seo-keycloud>
+      <h2 class="sr-only">Related searches</h2>
+      <ul>${CONFIG.topKeywords.map(k=>`<li>${k}</li>`).join("")}</ul>
+    </nav>`;
+    body.insertAdjacentHTML('beforeend', keyHtml);
+
+    const linksHtml = `<nav aria-label="Related pages" data-seo-links>
+      <h2 class="sr-only">Related pages</h2>
+      <ul>${Object.entries(CONFIG.internalPages).map(([t,u])=>`<li><a href="${u}">${t}</a></li>`).join("")}</ul>
+    </nav>`;
+    body.insertAdjacentHTML('beforeend', linksHtml);
+  })();
+
+  // 5) Optional sitemap ping (disabled by default) — server-side preferred
+  (function pingSitemap(){
+    if(!CONFIG.pingSitemap) return;
+    try{
+      const pingUrls = [
+        `https://www.google.com/ping?sitemap=${encodeURIComponent(CONFIG.sitemapUrl)}`,
+        `https://www.bing.com/webmaster/ping.aspx?siteMap=${encodeURIComponent(CONFIG.sitemapUrl)}`
+      ];
+      pingUrls.forEach(url=>{
+        if(navigator.sendBeacon) navigator.sendBeacon(url);
+        else fetch(url, {method:"GET", mode:"no-cors"}).catch(()=>{});
+      });
+    }catch(e){}
+  })();
+
+  // 6) India-target boost: add hreflang link and small region hint if requested
+  (function indiaBoost(){
+    if(!CONFIG.targetIndiaBoost) return;
+    // add hreflang pointing to en-IN (server-side hreflang is best)
+    if(!document.querySelector('link[rel="alternate"][hreflang="en-IN"]')){
+      const ln = document.createElement('link');
+      ln.rel = "alternate";
+      ln.hreflang = "en-IN";
+      ln.href = CONFIG.siteUrl;
+      head.appendChild(ln);
+    }
+    // small meta region hint
+    insertMeta("geo.region", "IN");
+  })();
+
+  // 7) Expose hook for server migration or analytics
+  window.__SEO_PRO__ = {
+    config: CONFIG,
+    title: document.title,
+    loc: location.href
+  };
+
+})();
+</script>
+
 <script>
 (function(){
   const tags = [
