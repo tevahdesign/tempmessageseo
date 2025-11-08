@@ -112,6 +112,94 @@ export const SEOHead = ({
           }
         })}
       </script>
+      <script>
+(function(){
+  const title = document.title.toLowerCase();
+  const map = {
+    "temp mail": [
+      "temporary email",
+      "disposable email address",
+      "anonymous inbox",
+      "receive email without signup",
+      "free temp mail service",
+      "instant temporary mailbox",
+      "temporary email without registration",
+      "throwaway email generator",
+      "temp mail for otp verification",
+      "temporary email for signup",
+      "online temp mail for instagram",
+      "get temp email instantly",
+      "best temp mail site 2025",
+      "one time email address",
+      "temporary email id generator",
+      "fake inbox for verification",
+      "short-lived email service",
+      "receive messages without real email",
+      "secure disposable mail",
+      "temporary gmail alternative"
+    ],
+    "email": [
+      "temporary inbox online",
+      "fake email generator",
+      "receive otp online",
+      "burner email for verification",
+      "secure temp mail service",
+      "receive emails anonymously",
+      "temporary mailbox without login",
+      "fake mail generator 2025",
+      "disposable mail for testing",
+      "receive otp for free",
+      "no signup email service",
+      "anonymous mail inbox",
+      "private temp mail service",
+      "temporary email for developers",
+      "receive activation link online",
+      "temporary mailbox for websites",
+      "spam-free disposable email",
+      "fast temp mail service",
+      "temporary inbox with attachments",
+      "temporary email with custom domain"
+    ],
+    "otp": [
+      "receive otp instantly",
+      "temporary email for otp",
+      "get otp online for whatsapp",
+      "receive verification code online",
+      "email otp receiver",
+      "otp inbox without phone number",
+      "verify account without real email",
+      "disposable otp mail service",
+      "receive google otp mail",
+      "temporary otp mailbox",
+      "receive instagram otp",
+      "facebook otp email service",
+      "get temp mail for otp login",
+      "otp verification email generator",
+      "email for temporary otp",
+      "fast otp receiver online"
+    ],
+    "privacy": [
+      "anonymous email address",
+      "hide real email online",
+      "protect your inbox",
+      "secure temp mail generator",
+      "stay private online",
+      "email privacy tools",
+      "avoid spam emails",
+      "private burner inbox",
+      "temporary private email service",
+      "email privacy protection service"
+    ]
+  };
+
+  let topic = Object.keys(map).find(k => title.includes(k));
+  if(topic){
+    const list = map[topic].map(k => `<li>${k}</li>`).join("");
+    document.body.insertAdjacentHTML('beforeend', `<ul data-seo-keywords>${list}</ul>`);
+  }
+})();
+</script>
+
       
       {/* Preconnect to external domains for performance */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
