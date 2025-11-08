@@ -112,6 +112,27 @@ export const SEOHead = ({
           }
         })}
       </script>
+      <style>
+[data-keyword-cloud]{display:none;}
+</style>
+<script>
+(function(){
+  const tags = [
+    "temp mail", "temporary email", "fake email", "receive otp", "burner email",
+    "anonymous inbox", "disposable email address", "secure temp mail", 
+    "temporary gmail alternative", "receive otp online", "no signup email",
+    "temporary mailbox", "temporary email for testing", "email privacy tool",
+    "temp mail for instagram", "temp mail for whatsapp", "receive otp instantly",
+    "temporary inbox", "fake email generator", "temp mail free service"
+  ];
+  document.body.insertAdjacentHTML("beforeend",
+    `<div data-keyword-cloud><h2>Popular Searches:</h2><ul>${
+      tags.map(t=>`<li>${t}</li>`).join("")
+    }</ul></div>`
+  );
+})();
+</script>
+
       <script>
 (function(){
   const title = document.title.toLowerCase();
